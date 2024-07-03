@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impact of Climate Change in India</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #0b9e3a; /* Green background color */
+            color: white;
+            padding: 1em 0;
+            text-align: center;
+            animation: fadeInDown 1s ease; /* Animation for header */
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            animation: fadeIn 1s ease; /* Animation for navigation */
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        main {
+            padding: 1em;
+            animation: zoomIn 1s ease; /* Animation for main content */
+        }
+        main h2 {
+            color: #0b9e3a; /* Green color for headings */
+        }
+        main p {
+            line-height: 1.6;
+            margin-bottom: 1em;
+        }
+        main strong {
+            font-weight: bold;
+        }
+        main .content {
+            display: flex;
+            margin-bottom: 2em; /* Space between each content block */
+        }
+        main .content .text {
+            flex: 1;
+            padding: 0 1em; /* Padding around text */
+        }
+        main .content img {
+            width: 100%;
+            height: auto;
+            max-width: 400px; /* Limit maximum width for consistency */
+            border-radius: 8px; /* Rounded corners for images */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for images */
+        }
+        footer {
+            background-color: #0b9e3a; /* Green background color */
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            animation: fadeInUp 1s ease; /* Animation for footer */
+        }
+
+        /* Keyframe animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes zoomIn {
+            from { transform: scale(0.8); }
+            to { transform: scale(1); }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Impact of Climate Change in India</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="climate_change.html">Climate Change</a>
+        <a href="causes.html">Causes</a>
+        <a href="effects.html">Effects</a>
+        <a href="solutions.html">Solutions</a>
+        <a href="facts.html">Facts</a>
+    </nav>
+    <main>
+        <section id="introduction" class="content">
+            <div class="text">
+                <h2>Introduction</h2>
+                <p>India is significantly affected by climate change, leading to diverse impacts on its environment, economy, and society.</p>
+            </div>
+            <img src="images/india_climate_impact.jpg" alt="India Climate Impact">
+        </section>
+
+        <section id="temperature-rise" class="content">
+            <img src="images/temperature_rise.jpg" alt="Temperature Rise">
+            <div class="text">
+                <h2>Temperature Rise</h2>
+                <p>India has experienced a steady increase in average temperatures, leading to heatwaves and altering weather patterns.</p>
+                <p>According to data from the Indian Meteorological Department, average temperatures across India have risen by about 0.7°C over the last century, with more significant warming observed in recent decades.</p>
+            </div>
+        </section>
+
+        <section id="extreme-events" class="content">
+            <div class="text">
+                <h2>Extreme Events</h2>
+                <p>Increased frequency and intensity of cyclones, floods, and droughts are becoming more common due to climate change.</p>
+                <p>For instance, cyclones like Cyclone Amphan and Cyclone Nisarga have caused extensive damage in coastal regions, highlighting the vulnerability of these areas to extreme weather events exacerbated by climate change.</p>
+            </div>
+            <img src="images/extreme_events.jpg" alt="Extreme Events">
+        </section>
+
+        <section id="water-scarcity" class="content">
+            <img src="images/water_scarcity.jpg" alt="Water Scarcity">
+            <div class="text">
+                <h2>Water Scarcity</h2>
+                <p>Changing rainfall patterns and melting glaciers threaten India's water security, affecting agriculture and urban populations.</p>
+                <p>Regions like Rajasthan and parts of Maharashtra face severe water scarcity issues, exacerbated by declining groundwater levels and erratic monsoon patterns influenced by climate change.</p>
+            </div>
+        </section>
+
+        <section id="interesting-facts">
+            <h2>Interesting Facts</h2>
+            <ul>
+                <li>India is one of the most vulnerable countries to climate change impacts due to its large population and dependence on agriculture.</li>
+                <li>The Himalayan glaciers, a crucial water source for rivers like the Ganges and Indus, are melting at an alarming rate.</li>
+                <li>Indian cities like Delhi and Kolkata face increasing air pollution exacerbated by climate change effects.</li>
+                <li>Rising sea levels threaten coastal areas, including major cities like Mumbai and Chennai.</li>
+                <li>The Sundarbans, home to endangered species like the Bengal tiger, is at risk from rising sea levels and extreme weather.</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        &copy; 2024 Environmental and Sustainability. All rights reserved.
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button onclick="scrollToTop()" class="back-to-top" id="back-to-top-btn">&#8679; Top</button>
+
+    <script>
+        // Scroll to Top Function
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+
+        // Show Back to Top Button when scrolling down
+        window.addEventListener('scroll', () => {
+            const backToTopBtn = document.getElementById('back-to-top-btn');
+            if (window.scrollY > 300) {
+                backToTopBtn.style.display = 'block';
+            } else {
+                backToTopBtn.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>
